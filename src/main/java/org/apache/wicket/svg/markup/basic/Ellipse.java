@@ -4,9 +4,9 @@ import org.apache.wicket.AttributeModifier;
 import org.apache.wicket.model.AbstractReadOnlyModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.svg.model.SvgCoordinate;
-import org.apache.wicket.svg.model.SvgEllipseRadius;
+import org.apache.wicket.svg.model.SvgXYRadius;
 
-public class Ellipse<T extends SvgCoordinate & SvgEllipseRadius> extends AbstractCoordinateSvgComponent<T> {
+public class Ellipse<T extends SvgCoordinate & SvgXYRadius> extends AbstractCoordinateSvgComponent<T> {
 
 	private static final long serialVersionUID = 1L;
 

@@ -1,6 +1,6 @@
 package org.apache.wicket.svg.model;
 
-public class EllipseModelItem implements SvgCoordinate, SvgEllipseRadius {
+public class EllipseModelItem implements SvgCoordinate, SvgXYRadius {
 
     private double cx;
     private double cy;
