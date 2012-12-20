@@ -10,40 +10,37 @@ import org.apache.wicket.svg.markup.basic.AbstractSvgComponent;
 
 public class Path extends AbstractSvgComponent {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    private final IModel<List<PathSegment>> pathSegments;
+	private final IModel<List<PathSegment>> pathSegments;
 
-    public Path(final String wicketId, final IModel<List<PathSegment>> pathSegments) {
-        super(wicketId);
-        this.pathSegments = pathSegments;
+	public Path(final String wicketId, final IModel<List<PathSegment>> pathSegments) {
+		super(wicketId);
+		this.pathSegments = pathSegments;
 
-        init();
-    }
+		init();
+	}
 
-    private void init() {
-        add(new AttributeModifier("d", new AbstractReadOnlyModel<String>() {
+	private void init() {
+		add(new AttributeModifier("d", new AbstractReadOnlyModel<String>() {
 
-            private static final long serialVersionUID = 1L;
+			private static final long serialVersionUID = 1L;
 
-            @Override
-            public String getObject() {
-                return StringUtils.join(pathSegments.getObject(), " ");
-            }
-        }));
-    }
+			@Override
+			public String getObject() {
+				return StringUtils.join(pathSegments.getObject(), " ");
+			}
+		}));
+	}
 
-    @Override
-    public void detachModels() {
-        super.detachModels();
-        for (final PathSegment pathSegment : pathSegments.getObject()) {
-            pathSegment.detach();
-        }
-        pathSegments.detach();
-    }
+	@Override
+	public void detachModels() {
+		super.detachModels();
+		pathSegments.detach();
+	}
 
-    @Override
-    protected String getTag() {
-        return "path";
-    }
+	@Override
+	protected String getTag() {
+		return "path";
+	}
 }
