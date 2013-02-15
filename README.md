@@ -20,7 +20,7 @@ Just include the library in your dependencies as every other library ;-)
 <dependency>
     <groupId>org.apache.wicket</groupId>
     <artifactId>wicket-core</artifactId>
-    <version>6.3.0</version>
+    <version>6.5.0</version>
 </dependency>
 ```
 
@@ -30,7 +30,7 @@ An example will be provided as fast as possible.
 
 ##Maven repository
 
-The Wicket SVG library is provided in the In2Experience repository https://dev.in2experience.com/nexus/content/repositories/public-release/
+The Wicket SVG library is provided in Central
 
 ## Authors and Contributors
 Daniel Zwicker (@dzwicker) founded the project on GitHub.
