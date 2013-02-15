@@ -3,3 +3,5 @@ pom.xml.releaseBackup
 release.properties
 .idea/libraries/Maven_*
 workspace.xml
+.idea
+*.iml
