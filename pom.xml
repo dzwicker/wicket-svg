@@ -10,7 +10,7 @@
 
     <groupId>com.github.dzwicker.wicket</groupId>
     <artifactId>wicket-svg</artifactId>
-    <version>6.5.0</version>
+    <version>6.5.1-SNAPSHOT</version>
     <name>Wicket SVG library</name>
     <description>A library for the Wicket framworke to work with SVG</description>
 
