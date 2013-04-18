@@ -42,7 +42,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <wicket.version>6.5.0</wicket.version>
+        <wicket.version>6.6.0</wicket.version>
         <java.version>1.7</java.version>
     </properties>
 
